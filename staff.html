@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="title" content="Home • Development Code">
+      <meta name="description" content="Develoment Code, free codes, best developer team, nitro giveaways, and much more..">
+      <link rel="icon" href="./assets/img/logo.gif">
+      <title>Staff • Development Code</title>
+
+      <meta property="og:title" content="Development Code">
+      <meta property="og:site_name" content="devcodes.tk">
+      <meta property="og:description" content="Develoment Code, free codes, best developer team, nitro giveaways, and much more..">
+      <meta property="og:type" content="profile">
+      <meta property="og:image" content="./assets/img/logo.gif">
+
+      <meta name="theme-color" content="#00dd83
+      ">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;800;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+      <style>
+         .pageContent {
+         display: none;
+         }
+    #loading {
+      position: fixed;
+      height: 10em;
+      width: 10em;
+      overflow: show;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+    }
+         #noscript {
+         display: none;
+         position: fixed;
+         z-index: 999;
+         height: 2em;
+         overflow: show;
+         margin: auto;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         text-align: center;
+         }
+         @-webkit-keyframes spin {
+         0% {
+         -webkit-transform: rotate(0deg);
+         }
+         100% {
+         -webkit-transform: rotate(360deg);
+         }
+         }
+         @keyframes spin {
+         0% {
+         transform: rotate(0deg);
+         }
+         100% {
+         transform: rotate(360deg);
+         }
+         }
+      </style>
+      <noscript>
+         <style>
+            #noscript {
+            display: block;
+            background: #212424 !important;
+            }
+      #loading {
+        border: none;
+        -webkit-animation: unset;
+        animation: unset;
+        height: 0;
+        width: 0;
+      }
+            .pageContent {
+            display: none;
+            }
+         </style>
+      </noscript>
+      <script>
+         $(window).on('load', function () {
+           $('#loading').hide();
+           $('.pageContent').show();
+         
+           function warnConsole() {
+             //console.clear();
+             console.log('%c' + 'Soon', 'font-size: 18px; font-weight: bold; color: #fff;');
+           }
+           warnConsole();
+           window.onresize = function () {
+             if ((window.outerHeight - window.innerHeight) > 100) {
+               warnConsole();
+             }
+           }
+         });
+         function setCookie(cname, cvalue, exdays) {
+           var d = new Date();
+           d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+           var expires = "expires=" + d.toUTCString();
+           document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+         }
+         
+         function getCookie(cname) {
+           var name = cname + "=";
+           var decodedCookie = decodeURIComponent(document.cookie);
+           var ca = decodedCookie.split(';');
+           for (var i = 0; i < ca.length; i++) {
+             var c = ca[i];
+             while (c.charAt(0) == ' ') {
+               c = c.substring(1);
+             }
+             if (c.indexOf(name) == 0) {
+               return c.substring(name.length, c.length);
+             }
+           }
+           return "";
+         }
+      </script>
+      <div id="themeDiv">
+         <link href="./css/dark.css" rel="stylesheet" id="theme" />
+      </div>
+      <script>
+         if (getCookie('theme') === 'light') {
+           document.getElementById('themeDiv').innerHTML = '<link href="./css/light.css" rel="stylesheet" id="theme"/>';
+         } else {
+           document.getElementById('themeDiv').innerHTML = '<link href="./css/dark.css" rel="stylesheet" id="theme"/>';
+         }
+      </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+      <script src="https://kit.fontawesome.com/a42eb0db23.js"></script>
+      <link rel="stylesheet" type="text/css"
+         href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+      <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+      <script>
+         window.addEventListener("load", function () {
+           window.cookieconsent.initialise({
+             "palette": {
+               "popup": {
+                 "background": "#242629"
+               },
+               "button": {
+                 "background": "50a9f2"
+               }
+             },
+             "showLink": false,
+             "theme": "classic",
+             "position": "bottom-right"
+           })
+         });
+      </script>
+   </head>
+    <body>
+      <button id="back-to-top-btn"><i class="fas fa-arrow-up" style="-webkit-text-stroke-width: 0.7px; -webkit-text-stroke-color: #fff;"></i></button>
+  <script>
+
+    $(document).ready(function () {
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 40) {
+          $('#back-to-top-btn').fadeIn();
+        } else {
+          $('#back-to-top-btn').fadeOut();
+        }
+      });
+
+      $("#back-to-top-btn").click(function () {
+        $('html ,body').animate({ scrollTop: 0 }, 800);
+      });
+    });
+
+  </script>
+      <div id="noscript">
+         <h1>
+            You need JavaScript enabled to view this page...
+         </h1>
+      </div>
+      <div id="loading" class="loader">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+      <div class="pageContent">
+                  <script>
+               function changeTheme() {
+                 var t = document.getElementById('theme').href;
+                 if (t === `${document.location.origin}/css/light.css`) {
+                   theme = 'light';
+                 } else {
+                   theme = 'dark';
+                 }
+               
+                 if (theme === 'light') {
+                   document.getElementById('theme').href = './css/dark.css';
+                   setCookie('theme', 'dark', 1);
+                   console.log('Changed to dark theme');
+                 } else {
+                   document.getElementById('theme').href = './css/light.css';
+                   setCookie('theme', 'light', 1);
+                   console.log('Changed to light theme');
+                 }
+               
+               }
+            </script>
+            
+            <script>
+            function href(url) {
+              location.href = `/${url}`;
+            }
+            </script>
+         <body>
+
+<div class="modal" id="uploadCodeModal">
+  <div class="modal-content modal-uploadCode">
+    <span class="modal-close">&times;</span>
+    <h1 class="upload-code-title">Upload Code</h1>
+    <center>
+    
+      <div class="select-box">
+
+        <div class="options-container">
+
+          <div class="option" onclick="uploadCodeFunctionOne('github')">
+            <input type="radio" class="radio" id="githubUploadCode" value="githubUploadCode" name="platform" />
+            <label for="githubUploadCode">Github</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionOne('sourcebin')">
+            <input type="radio" class="radio" id="sourcebinUploadCode" value="sourcebinUploadCode" name="platform" />
+            <label for="sourcebinUploadCode">Sourcebin</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionOne('file')">
+            <input type="radio" class="radio" id="fileUploadCode" value="fileUploadCode" name="platform" />
+            <label for="fileUploadCode">All (.zip, .rar)</label>
+          </div>
+
+        </div>
+
+        <div class="selected">
+          Code Platform
+        </div>
+        
+      </div>
+
+      <br>
+
+      <div id="categoryUploadCode" style="display: none;" class="select-box">
+
+        <div class="options-container">
+
+          <div class="option" onclick="uploadCodeFunctionTwo('js')">
+            <input type="radio" class="radio" id="jsUploadCode" value="jsUploadCode" name="category" />
+            <label for="jsUploadCode">JavaScript</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionTwo('py')">
+            <input type="radio" class="radio" id="pyUploadCode" value="pyUploadCode" name="category" />
+            <label for="pyUploadCode">Python</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionTwo('cpp')">
+            <input type="radio" class="radio" id="cppUploadCode" value="cppUploadCode" name="category" />
+            <label for="cppUploadCode">C++</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionTwo('dbd')">
+            <input type="radio" class="radio" id="dbdUploadCode" value="dbdUploadCode" name="category" />
+            <label for="dbdUploadCode">Bdfd</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionTwo('html')">
+            <input type="radio" class="radio" id="htmlUploadCode" value="htmlUploadCode" name="category" />
+            <label for="htmlUploadCode">Html</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionTwo('ts')">
+            <input type="radio" class="radio" id="tsUploadCode" value="tsUploadCode" name="category" />
+            <label for="tsUploadCode">TypeScript</label>
+          </div>
+
+          <div class="option" onclick="uploadCodeFunctionTwo('java')">
+            <input type="radio" class="radio" id="javaUploadCode" value="javaUploadCode" name="category" />
+            <label for="javaUploadCode">Java</label>
+          </div>
+
+
+          <div class="option" onclick="uploadCodeFunctionTwo('premium')">
+            <input type="radio" class="radio" id="premiumUploadCode" value="premiumUploadCode" name="category" />
+            <label for="premiumUploadCode">Premium</label>
+          </div>
+
+        </div>
+
+        <div id="codeCategoryUploadCode" class="selected">
+          Code Category
+        </div>
+
+      </div>
+
+      <br>
+
+  <div id="titleUploadCode" class="box-uploadFinish" style="display: none;">
+    <div class="ed-textarea">
+    
+      <input id="titleUploadCodeInput" type="text" name="titleUploadCodeInput" autocomplete= "off" required>
+      <label class="label-hoshi" for="titleUploadCodeInput">
+        <span class="content-hoshi">Title</span>
+      </label>
+    
+    </div>
+  </div>
+
+  <br>
+
+  <div id="descriptionUploadCode" class="box-uploadFinish" style="display: none;">
+    <div class="ed-textarea">
+    
+      <input id="descriptionUploadCodeInput" type="text" name="descriptionUploadCodeInput" autocomplete= "off" required>
+      <label class="label-hoshi" for="descriptionUploadCodeInput">
+        <span class="content-hoshi">Description</span>
+      </label>
+    
+    </div>
+  </div>
+
+  <br>
+
+    <div id="textUploadCode" class="box-uploadFinish" style="display: none;">
+      <div class="ed-textarea">
+      
+        <input id="codeurlUploadCode" type="text" name="codeurlUploadCode" autocomplete="off" required>
+        <label class="label-hoshi" for="codeurlUploadCode">
+          <span class="content-hoshi">URL of your code</span>
+        </label>
+      
+      </div>
+    </div>
+
+    <div id="fileUploadCodeHUH" class="box-uploadFinish" style="display: none;">
+      <input type="file" id="input-fileUploadCode" name="input-fileUploadCode" accept=".zip,.rar,.7zip,.tar" onchange="handleFileUploadCode()" hidden>
+    
+      <label id="uploaded-nameUploadCode" class="btn-upload" for="input-fileUploadCode" role="button">
+        <i class="fas fa-upload" aria-hidden="true"></i> Upload File
+      </label>
+    </div>
+</center>
+<button id="uploadCodeSubmitBTN" style="display: none;" class="upload-btn-submit" onclick="submitUploadCode()">Submit</button>
+  </div>
+</div>
+
+        <header>
+            <a class="logo" href="/"><img class="circle" style="width: 60px !important;" src="./assets/img/logo.gif"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://discord.gg/JgX85x7ZMF">Server</a></li>
+                    <li><a href="/staff">Staff</a></li>
+                    <li><a href="/v12">v11 to v12</a></li>
+                    <li><a href="https://discord.com/oauth2/authorize?client_id=846057864660647947&scope=bot&permissions=8">Devi</a></li>
+                    <li><a href="https://github.com/Development-Code">Codes</a></li>
+                    
+                </ul>
+            </nav>
+            
+              <a class="cta" href="/login">Login</a>
+            
+            <p class="menu cta"><i class="fas fa-bars"></i></p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <li><a href="/">Home</a></li>
+                    <li><a href="https://discord.gg/JgX85x7ZMF">Server</a></li>
+                    <li><a href="/staff">Staff</a></li>
+                    <li><a href="/v12">v11 to v12</a></li>
+                    <li><a href="https://discord.com/oauth2/authorize?client_id=846057864660647947&scope=bot&permissions=8">Devi</a></li>
+                    <li><a href="https://github.com/Development-Code">Codes</a></li>
+                    
+                  <a class="cta" href="/login">Login</a>
+                
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/mobile.js"></script>
+        <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+        <script type="text/javascript" src="./js/popup-2e22e2q2.js"></script>
+        <script type="text/javascript" src="./js/alert.js"></script>
+        <script type="text/javascript" src="./js/select-box.js"></script>
+
+        <div id="successAlertUploadCode" class="alert-notif hide">
+          <span class="fas fa-check"></span>
+          <span class="message">Successfully posted your code!</span>
+          <div class="close-btn">
+            <span class="fas fa-times"></span>
+          </div>
+        </div>
+
+        <div id="errorAlertUploadCode" class="alert-notif error hide">
+          <span class="fas fa-times-circle"></span>
+          <span class="message"></span>
+          <div class="close-btn">
+            <span class="fas fa-times"></span>
+          </div>
+        </div>
+
+          <script>
+
+          let filename, filesize, code;
+
+          function handleFileUploadCode() {
+            const fileUploader = document.querySelector('#input-fileUploadCode');
+            const getFile = fileUploader.files;
+            if (getFile.length !== 0) {
+              const uploadedFile = getFile[0];
+              readFileUploadCode(uploadedFile);
+            }
+          }
+  
+          function readFileUploadCode(uploadedFile) {
+            const reader = new FileReader();
+            reader.onload = () => {
+
+              const parent = document.getElementById('uploaded-nameUploadCode');
+              parent.innerHTML = '<i class="fas fa-check-circle"></i> ' + uploadedFile.name;
+              filename = uploadedFile.name;
+              filesize = uploadedFile.size;
+              code = reader.result;
+
+            }
+            reader.readAsDataURL(uploadedFile);
+          }
+
+            let endOfUploadCode = {};
+            function uploadCodeFunctionOne(data) {
+
+              if (document.getElementById('categoryUploadCode').style.display === 'flex' && document.getElementById('codeCategoryUploadCode').getAttribute('ended')) {
+                uploadCodeFunctionTwo(document.getElementById('codeCategoryUploadCode').getAttribute('ended').replace('UploadCode', ''));
+              }
+
+              document.getElementById('categoryUploadCode').style.display = 'flex';
+              endOfUploadCode.platform = data;
+            }
+
+            function uploadCodeFunctionTwo(data) {
+
+              endOfUploadCode.category = data;
+
+              document.getElementById('titleUploadCode').style.display = 'block';
+              document.getElementById('descriptionUploadCode').style.display = 'block';
+              document.getElementById('uploadCodeSubmitBTN').style.display = 'block';
+
+              if (endOfUploadCode.platform === 'sourcebin') {
+                document.getElementById('textUploadCode').style.display = 'block';
+                document.getElementById('fileUploadCodeHUH').style.display = 'none';
+              }
+              else
+              if (endOfUploadCode.platform === 'github') {
+                document.getElementById('textUploadCode').style.display = 'block';
+                document.getElementById('fileUploadCodeHUH').style.display = 'none';
+              }
+              else
+              if (endOfUploadCode.platform === 'file') {
+                document.getElementById('fileUploadCodeHUH').style.display = 'block';
+                document.getElementById('textUploadCode').style.display = 'none';
+              }
+            }
+
+            function submitUploadCode() {
+              let submitBTN = document.getElementById('uploadCodeSubmitBTN');
+
+              submitBTN.classList.add('loading');
+
+              submitBTN.innerText = 'Posting...';
+
+              let title = document.getElementById('titleUploadCodeInput').value;
+              let description = document.getElementById('descriptionUploadCodeInput').value;
+
+              if (endOfUploadCode.platform === 'sourcebin') {
+                code = document.getElementById('codeurlUploadCode').value;
+              } else if (endOfUploadCode.platform === 'github') {
+                code = document.getElementById('codeurlUploadCode').value;
+              }
+
+              let data = {
+                title: title,
+                description: description,
+                code: code,
+                platform: endOfUploadCode.platform,
+                category: endOfUploadCode.category,
+                filename: filename,
+                filesize: filesize
+              }
+
+              fetch('https://devcodes.tk/uploadCode', {
+                method: 'POST',
+                mode: 'cors',
+                cache: 'no-cache',
+                credentials: 'same-origin',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                redirect: 'follow',
+                referrerPolicy: 'no-referrer',
+                body: JSON.stringify(data)
+              }).then(res => res.json()).then(async (body) => {
+
+                submitBTN.classList.remove('loading');
+                submitBTN.innerText = 'Submit';
+
+                if (body.message) {
+
+                  let alert = await document.getElementById('errorAlertUploadCode');
+
+                  let message = await alert.getElementsByClassName('message');
+
+                  message[0].innerText = 'Error: ' + body.message;
+
+                  showAlertNotif('errorAlertUploadCode');
+
+                } else {
+                  showAlertNotif('successAlertUploadCode');
+                  setTimeout(() => {
+                    location.reload();
+                  }, 10000);
+                }
+              })
+            }
+          </script>
+
+        <div class="container">
+
+
+
+<center>
+    <h1 class="h1-title">
+        Founder
+    </h1>
+</center>
+
+<div class="developersPadding">
+
+        <div class="dev-list">
+
+            <div class="dev-object" onclick="location.href='https://github.com/Crni39'">
+                <img src="https://cdn.discordapp.com/attachments/799260287517327421/846403034094370816/a_425689548fa64172cb15ffcb70d5125c.gif" width="80" height="80" class="circle dev-objecct-left" alt="alt" class="P-profile">
+                <div class="dev-object-right">
+                    <h2 class="dev-object-head">
+                        The Digital#3999
+                    </h2>
+                </div>
+            </div>
+
+            
+        </div> 
+</div>
