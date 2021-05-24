@@ -208,7 +208,7 @@ header {
 }
 
 #back-to-top-btn:hover, #back-to-top-btn:focus {
-    background-color: rgba(0, 221, 131, .8);
+    background-color: rgba(102, 153, 255);
     color: #fff;
     box-shadow: 0px 1px 2px 0px rgb(0 0 0 / 0.45), 0px 2px 6px 2px rgb(0 0 0 / 0.45);
 }
