@@ -39,7 +39,8 @@ Server Rules are in 3 categories, yellow (easy), orange (medium), red (hard).
 - It is forbidden to threaten members with ddos and similar.
 
 ## Links
-Before u get full access, check out website and other links if you already didn't!
+Before u get full access, check out website and other links if you already didn't! 
+
 Links: [Website](https://devcodes.tk), [GitHub](https://githb.com/Development-Code), [Server](https://discord.gg/JgX85x7ZMF). Soon more!
 
 ### Widget
