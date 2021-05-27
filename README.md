@@ -10,17 +10,21 @@ This community was made on 20.02.2021. hoping to gather people across the World 
 By boosting our server or donating, you give great support to it. As a thank you for the boost/boosts/donations, you get some sweet benefits like, exclusive role in server, premium, access to beta section and much more!
 
 ## Applications
-Applications are in google docs, some maybe won't be, follow #🔔︱announcements
+Applications are in google docs, some maybe won't be, follow #🔔︱announcements. 
+
 Most often, applications are opened once per month, so you need be careful.
+
 
 [Developer Apps](https://docs.google.com/forms/d/13taLXyRL2wgbFEbornwZgC1hhx7COECyORNOuFRHIzk/viewform), [Staff Applications](https://docs.google.com/forms/d/1ULLVIUgQ31H2Wtsx-kpBKw92vSGSXUUColFD5iY7pxM/viewform), [Bot Submissions](https://docs.google.com/forms/d/e/1FAIpQLSdbmpS1iuXYKTed2uKL3QYfD8gsJ3_JM1JVQB5o87V15tBJdA/viewform).
 
 ## Terms & Guidelines
-Like any server, we have some rules that you must follow, they are listed bellow.
+Like any server, we have some rules that you must follow, they are listed bellow. 
+
 Also you must follow Discord's [Terms of service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines).
 
 ## Rules
 Server Rules are in 3 categories, yellow (easy), orange (medium), red (hard).
+
 4 warns = mute 6h, 10 warns = 2d temp ban, 15 warns = parament ban.
 
 ### • YELLOW ZONE • (mute, warn)
